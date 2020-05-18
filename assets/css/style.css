@@ -1,0 +1,471 @@
+@import url(//db.onlinewebfonts.com/c/bfbdc6a04609bff0d5ccdfcf6b766d95?family=Flood+Std);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #354463;
+    text-decoration: none;
+    display: block;
+}
+
+/*##################################
+    INDEX PAGE STYLES
+####################################*/
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* Navigation bar Style */
+#navbar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 12.8rem;
+    justify-content: space-around;
+}
+
+#navbar .title {
+    width: 16rem;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navbar ul.nav-links {
+    margin-left: 2rem;
+}
+
+.nav-links li {
+    padding: 0 4rem;
+}
+
+.nav-links li a:hover {
+    border-bottom: 4px solid teal;
+}
+
+.nav-links .donate-link {
+    background: #C1F7D5;
+    border-radius: 10rem;
+    height: 4.8rem;
+    padding-top: .6rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* The  issue styke start */
+.the-issue-section {
+    height: 68rem;
+    background: transparent url('../images/annie-spratt-135307-unsplash.png') 0% 0% no-repeat padding-box;
+    opacity: 0.76;
+}
+
+div.climate-change {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-items: center; */
+    /* justify-items: center; */
+    /* position: relative; */
+}
+
+#the-issue-header {
+
+    background-color: #000;
+    position: absolute;
+    top: -2rem;
+    left: 13%;
+    padding: 1rem 3rem;
+    opacity: 1;
+    z-index: 1;
+}
+
+#the-issue-header h3 {
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    color: #fff;
+
+}
+
+.climate-change-banner {
+    background-color: #fff;
+    color: #354463;
+    height: 43rem;
+    width: 54.4rem;
+    margin: 12rem 14rem;
+    position: relative;
+}
+
+
+.climate-change-banner h1 {
+
+    font-size: 4.4rem;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 4rem;
+    padding: 5rem 2rem 2rem 2rem;
+    opacity: 1;
+
+}
+
+
+.climate-change-banner a {
+    font-size: 1.6rem;
+    margin-left: 4rem;
+    padding: 0 4rem 0rem 2rem;
+    color: #354463;
+    text-decoration: underline;
+}
+
+.climate-change-hashtag {
+    margin-top: 12rem;
+    width: 29.6rem;
+    height: 22.4rem;
+    background: transparent url('../images/stopclimatechange.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+/* The  issue styke end */
+
+/* Take action start */
+
+.take-action-section {
+    background-color: #C1F7D5;
+    color: #354463;
+    width: 100%;
+    height: 24rem;
+    margin-top: -1rem;
+    position: relative;
+}
+
+
+#take-action-header {
+
+    background-color: #000;
+    position: absolute;
+    top: -2rem;
+    left: 45%;
+    padding: 1rem 3rem;
+    opacity: 1;
+    z-index: 1;
+}
+
+#take-action-header h3 {
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    color: #fff;
+}
+
+.action-lists {
+    display: grid;
+    grid-template-columns: repeat(4, 19%);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.action-lists div {
+    width: 23.5rem;
+    height: 89rem;
+    margin: 6rem 1rem;
+    padding-top: 2rem;
+}
+
+.action-lists div h4 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.action-lists>div p {
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+/* Take action end */
+
+/* What we do style start */
+.what-we-do-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background-color: #354463;
+    color: #fff;
+    position: relative;
+    /* height: 1000rem; */
+}
+
+#what-we-do-header {
+    background-color: #fff;
+    color: #000;
+    margin-left: 15rem;
+    margin-top: 8rem;
+    width: 16rem;
+    opacity: 1;
+    z-index: 1;
+}
+
+#what-we-do-header h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    padding: 1rem 2rem;
+}
+
+.what-we-do-mission h1 {
+    margin: 4rem 15rem;
+    font-size: 4.1rem;
+    font-weight: bold;
+}
+
+
+.mission-cards {
+    margin: 7rem 10rem 0 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 32rem);
+    gap: 6rem;
+    justify-content: center;
+}
+
+.mission-cards div {
+    background-color: #fff;
+    color: #000;
+    height: 52.8rem;
+    margin-bottom: 10rem;
+    position: relative;
+
+}
+
+
+.mission-cards div h2 {
+    margin: 65% 2rem 1rem 3rem;
+    font-size: 2.8rem;
+    text-align: left;
+    color: #354463;
+}
+
+.mission-cards div p {
+    margin: 0 2rem 3rem 3rem;
+    font-size: 1.6rem;
+    text-align: left;
+    color: #354463;
+}
+
+.mission-cards div a {
+    margin: 0 13rem 0 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #C1F7D5;
+    color: #354463;
+    border-radius: 10rem;
+    padding: .8rem;
+
+}
+
+.mission-card-img-1 {
+    height: 22.4rem;
+    width: 32.2rem;
+    background: transparent url('../images/tree-planting.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+    right: -3rem;
+    top: -3rem;
+}
+
+.mission-card-img-2 {
+    height: 22.4rem;
+    width: 32.2rem;
+    background: transparent url('../images/education-training.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+    right: -3rem;
+    top: -3rem;
+}
+
+.mission-card-img-3 {
+    height: 22.4rem;
+    width: 32.2rem;
+    background: transparent url('../images/advocacy.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+    right: -3rem;
+    top: -3rem;
+}
+
+/* What we do style end */
+
+/*##########################################
+        Donation Page Styling
+##########################################*/
+.donation-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.donation-container #header {
+    height: 12rem;
+    background-color: #fff;
+}
+
+.title-header {
+    text-align: center;
+    margin: 1.6rem auto;
+    width: 20rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #354463;
+    opacity: 1;
+}
+
+.donation-container main {
+    height: 122.4rem;
+    background: transparent url('../images/annie-spratt-427340-unsplash-donation.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+}
+
+.payment-and-information-section {
+    height: 101.6rem;
+    width: 64rem;
+    position: absolute;
+    top: 8rem;
+    left: 15rem;
+    background-color: #354463;
+}
+
+.text-banner {
+    width: 38.4rem;
+    height: 36.2rem;
+    position: absolute;
+    top: 8rem;
+    right: 15rem;
+}
+
+.text-banner h1 {
+    text-align: left;
+    line-height: 1.1;
+    font-size: 7.2rem;
+    font-family: Flood Std;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.your-information {
+    border: 5px solid tomato;
+    margin-bottom: 2rem;
+}
+
+.payment-information {
+    border: 5px solid green;
+}
+
+/* Dontion Footer */
+#donation-footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: baseline;
+    background-color: #fff;
+    color: #354463;
+    height: 34rem;
+    margin-top: 10rem;
+}
+
+.footer-header {
+    margin-right: 10rem;
+    width: 17rem;
+
+}
+
+.footer-header h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.footer-hashtag {
+    width: 20rem;
+    margin-left: 8rem;
+}
+
+.footer-hashtag h2 {
+    font-weight: normal;
+    text-align: right;
+    font-size: 4.4rem;
+    font-family: flood std;
+    color: #354463;
+    line-height: 1.1;
+}
+
+#donation-footer section.address-and-links {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    /* border: 3px solid white; */
+}
+
+.address-and-links div.contact-us,
+div.links,
+div.social-links {
+    width: 15rem;
+    margin: 0 2rem;
+}
+
+.address-and-links div h4 {
+    font-size: 1.4rem;
+    text-align: left;
+    letter-spacing: 0.056rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #354463;
+    color: #354463;
+}
+
+.address-and-links div a {
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: -0.14px;
+    text-transform: capitalize;
+    color: #354463;
+}
+
+.address-and-links div address {
+    display: block;
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: -0.14px;
+    color: #354463;
+}
