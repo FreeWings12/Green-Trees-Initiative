@@ -330,6 +330,7 @@ div.climate-change {
     grid-template-columns: 1fr;
 }
 
+/* Donation header style start */
 .donation-container #header {
     height: 12rem;
     background-color: #fff;
@@ -345,28 +346,150 @@ div.climate-change {
     opacity: 1;
 }
 
+/* Donation header style end */
+
+/* Donation main style start */
+
 .donation-container main {
-    height: 122.4rem;
     background: transparent url('../images/annie-spratt-427340-unsplash-donation.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
     opacity: 1;
-    position: relative;
+    height: 125vh;
 }
 
 .payment-and-information-section {
-    height: 101.6rem;
-    width: 64rem;
-    position: absolute;
-    top: 8rem;
-    left: 15rem;
-    background-color: #354463;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 6%;
 }
 
-.text-banner {
-    width: 38.4rem;
-    height: 36.2rem;
-    position: absolute;
-    top: 8rem;
-    right: 15rem;
+.payment-and-information-section>.form-information {
+    background-color: #354463;
+    width: 44%;
+
+}
+
+.payment-and-information-section>.text-banner {
+    width: 30%;
+}
+
+.form-information form {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5rem;
+
+}
+
+.form-information form div {
+
+    margin: 1rem 0rem 0 0;
+}
+
+.form-information form h4 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.form-information form label {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.056rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.form-information form input {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.04rem;
+    text-align: left;
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+    margin: 1rem 0;
+
+}
+
+
+.form-information form div>div {
+    margin: 0.2rem 0;
+    border-bottom: 2px solid #C1F7D5;
+}
+
+.form-information form .name {
+    display: grid;
+    grid-template-columns: repeat(2, 37%);
+    gap: 5rem;
+
+}
+
+.form-information form .street,
+form .email-address,
+form .card,
+form .donation-message {
+    display: grid;
+    grid-template-columns: 83%;
+}
+
+.form-information form .city-state-zip {
+    display: grid;
+    grid-template-columns: 36% repeat(2, 15%);
+    gap: 5rem;
+}
+
+.form-information form #state {
+    border: none;
+    outline: none;
+    background: orange;
+}
+
+.form-information form .card-expiry {
+    display: grid;
+    grid-template-columns: repeat(2, 10rem) 13rem;
+    gap: 6rem;
+}
+
+.payment-heading h4 {
+    margin-top: 3rem;
+}
+
+.donation-message h2 {
+    margin-top: 3rem;
+}
+
+.form-information form .payment-links {
+    display: grid;
+    grid-template-columns: 30% 42%;
+    gap: 6rem;
+    margin-bottom: 0;
+}
+
+.form-information form .donation-message h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.form-information form a.back-btn {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -0.016rem;
+    text-align: left;
+    text-decoration: underline;
+    color: #C1F7D5;
+}
+
+.form-information form a.payment-proceed-btn {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #C1F7D5;
+    color: #354463;
+    border-radius: 10rem;
+    padding: 1rem;
 }
 
 .text-banner h1 {
@@ -376,15 +499,6 @@ div.climate-change {
     font-family: Flood Std;
     color: #FFFFFF;
     opacity: 1;
-}
-
-.your-information {
-    border: 5px solid tomato;
-    margin-bottom: 2rem;
-}
-
-.payment-information {
-    border: 5px solid green;
 }
 
 /* Dontion Footer */
@@ -469,3 +583,104 @@ div.social-links {
     letter-spacing: -0.14px;
     color: #354463;
 }
+
+
+
+/*kwkqndwndjkndjndekjenddjkenjkenddje*/
+
+/* section.payment-and-information-section {
+    min-height: 800px;
+    background: url("img/dona.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 150px;
+}
+
+.info {
+    background: #354463 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 750px;
+    margin: 30px 0px;
+    display: grid;
+    align-items: center;
+    padding: 50px;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+}
+
+.city-zip {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+}
+
+.State {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+}
+
+.expiration {
+    display: grid;
+    grid-template-columns: 50% 25%;
+    column-gap: 10%;
+}
+
+.d {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+}
+
+.btn-links {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    margin-top: 10px;
+}
+
+.btn-links button {
+    font-size: 20px;
+    background: rgba(193, 247, 213, 1) 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    opacity: 1;
+    padding: 10px;
+    border: 0;
+    color: rgba(53, 68, 99, 1);
+}
+
+.lkn {
+    font-size: 20px;
+    opacity: 1;
+    padding: 10px;
+    color: rgba(193, 247, 213, 1);
+}
+
+aside.aside {
+    margin: 30px 0px;
+    height: 362px;
+    width: 300px;
+}
+
+.aside div {
+    height: 250px;
+}
+
+.aside div p {
+    margin: 0;
+    font-family: "Homemade Apple", cursive;
+    font-size: 60px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+*/

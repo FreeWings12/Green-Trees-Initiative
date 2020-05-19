@@ -16,53 +16,97 @@
         </header>
         <main id="donation-main">
             <section class="payment-and-information-section">
-                <div class="your-information">
+                <div class="form-information">
                     <form action="#">
-                        <fieldset>
+                        <div class="info-heading">
                             <h4>Your Information</h4>
-                            <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name" placeholder="First Name">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name" placeholder="Last name"><br>
-                            <label for="street-address">Street Address</label>
-                            <input type="text" placeholder="Street address" id="street-address"><br>
-                            <label for="city">City</label>
-                            <input type="text" name="city" placeholder="City" id="city">
-                            <label for="state">State</label>
-                            <select name="state" id="state">
-                                <option value="al">AL</option>
-                                <option value="as">AS</option>
-                                <option value="ka">KA</option>
-                            </select>
-                            <label for="zip-code">Zip Code</label>
-                            <input type="text" name="zip-code" id="zip-code" placeholder="Zip code"><br>
-                            <label for="email">Email Address</label>
-                            <input type="email" name="email" id="email" placeholder="Email address">
-                            <!-- </fieldset> -->
-                            <!-- </form> -->
-                            <!-- </div>
-                <div class="payment-information"> -->
-                            <h4>Payment Information</h4>
-                            <!-- <form action="#"> -->
-                            <!-- <fieldset> -->
-                            <label for="card-number">Credit Card Number</label>
-                            <input type="text" name="card-number" id="card-number" placeholder="Card number"><br>
-                            <label for="">Expiration</label>
-                            <input type="text" name="expiry-month" id="expiry-month" placeholder="MM">
-                            <input type="text" name="expiry-year" id="expiry-year" placeholder="YYYY"><br>
-                            <label for="cvc-code">Security Code</label>
-                            <input type="text" name="cvc-code" id="cvc-code" placeholder="CVC"><br>
+                        </div>
+                        <div class="name">
+                            <div class="first-name-class">
+                                <label for="first-name">First Name</label><br>
+                                <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                            </div>
+                            <div class="last-name-class">
 
-                        </fieldset>
-                        <h2>Click the button to confirm your donation of $10, recurring monthly.</h2>
-                        <a href="#" class="payment-back-btn">Go back</a><a href="#" class="payment-proceed-btn">Process
-                            Payment</a>
+                                <label for="last-name">Last Name</label><br>
+                                <input type="text" name="last-name" id="last-name" placeholder="Last name"><br>
+                            </div>
+                        </div>
+                        <div class="street">
+                            <div>
+                                <label for="street-address">Street Address</label><br>
+                                <input type="text" placeholder="Street address" id="street-address"><br>
+                            </div>
+                        </div>
+
+                        <div class="city-state-zip">
+                            <div class="city-name">
+                                <label for="city">City</label><br>
+                                <input type="text" name="city" placeholder="City" id="city">
+                            </div>
+                            <div class="state-name">
+                                <label for="state">State</label><br>
+                                <select name="state" id="state">
+                                    <option value="al">AL</option>
+                                    <option value="as">AS</option>
+                                    <option value="ka">KA</option>
+                                </select>
+                            </div>
+                            <div class="zip">
+                                <label for="zip-code">Zip Code</label><br>
+                                <input type="text" name="zip-code" id="zip-code" placeholder="Zip code"><br>
+                            </div>
+                        </div>
+                        <div class="email-address">
+                            <div>
+
+                                <label for="email">Email Address</label><br>
+                                <input type="email" name="email" id="email" placeholder="Email address">
+                            </div>
+                        </div>
+
+                        <div class="payment-heading">
+                            <h4>Payment Information</h4>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <label for="card-number">Credit Card Number</label><br>
+                                <input type="text" name="card-number" id="card-number" placeholder="Card number"><br>
+                            </div>
+                        </div>
+                        <div class="card-expiry">
+                            <div class="card-expiry-month">
+
+                                <label for="">Expiration</label><br>
+                                <input type="text" name="expiry-month" id="expiry-month" placeholder="MM">
+                            </div>
+                            <div class="card-expiry-year">
+                                <label for=""></label><br>
+                                <input type="text" name="expiry-year" id="expiry-year" placeholder="YYYY"><br>
+                            </div>
+                            <div class="card-cvc-code">
+
+                                <label for="cvc-code">Security Code</label><br>
+                                <input type="text" name="cvc-code" id="cvc-code" placeholder="CVC"><br>
+                            </div>
+                        </div>
+                        <div class="donation-message">
+
+                            <h2>Click the button to confirm your donation of $10, recurring monthly.</h2>
+                        </div>
+                        <div class="payment-links">
+
+                            <a href="#" class="back-btn">Go back</a>
+                            <a href="#" class="payment-proceed-btn">Process Payment</a>
+                        </div>
                     </form>
                 </div>
+                <div class="text-banner">
+                    <h1>Give HOPE to those Who need It most</h1>
+                </div>
+
             </section>
-            <section class="text-banner">
-                <h1>Give HOPE to those Who need It most</h1>
-            </section>
+
         </main>
         <footer id="donation-footer">
             <header class="footer-header">
@@ -97,3 +141,89 @@
 </body>
 
 </html>
+
+
+
+
+
+
+<!-- <section class="payment-and-information-section">
+                <div class="info">
+                    <h1 class="inl">Your information</h1>
+                    <div class="name">
+                        <div class="fname">
+                            <p>FIRST NAME</p>
+                            <input type="text" placeholder="First name">
+                            <hr class="fhr" />
+                        </div>
+                        <div class="lname">
+                            <p>LAST NAME</p>
+                            <input type="text" placeholder="Last name">
+                            <hr class="fhr" />
+                        </div>
+                    </div>
+                    <div class="street-address">
+                        <p>STREET ADDRESS</p>
+                        <input type="text" placeholder="Street address">
+                        <hr />
+                    </div>
+                    <div class="city-zip">
+                        <div class="city">
+                            <p>CITY</p>
+                            <input type="text" placeholder="City name">
+                            <hr>
+                        </div>
+                        <div class="State">
+                            <div>
+                                <p>STATE</p>
+                                <select name="" id="sele">
+                                    <option value="AL">AL</option>
+                                </select>
+                                <hr />
+                            </div>
+                            <div class="Zip-code">
+                                <p>ZIP CODE</p>
+                                <input type="text" placeholder="Zip code">
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email-add">
+                        <p>EMAIL ADDRESS</p>
+                        <input type="text" placeholder="Email address">
+                        <hr />
+                    </div>
+                    <h1>Payment information</h1>
+                    <div class="credit">
+                        <p>CREDIT CARD NUMBER</p>
+                        <input type="text" placeholder="Credit card number">
+                        <hr />
+                    </div>
+                    <div class="expiration">
+                        <div class="expi">
+                            <p>EXPIRATION</p>
+                            <div class="d">
+                                <div class="subexpiration">
+                                    <input type="text" placeholder="MM">
+                                    <hr>
+                                </div>
+                                <div class="subexpiration1">
+                                    <input type="text" placeholder="YY">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="security">
+                            <p>SECURITY CODE</p>
+                            <input type="text" placeholder="CVC">
+                            <hr>
+                        </div>
+                    </div>
+                    <h1>Click the button to confirm your donation of $10, recurring monthly.s</h1>
+                    <div class="btn-links">
+                        <a href="#" class="lkn">Go back</a>
+                        <a href="#"><button>Process Payment</button></a>
+                    </div>
+                </div>
+    </div>
+ -->
