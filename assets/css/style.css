@@ -1,31 +1,35 @@
-@import url(//db.onlinewebfonts.com/c/bfbdc6a04609bff0d5ccdfcf6b766d95?family=Flood+Std);
+/* @import url(//db.onlinewebfonts.com/c/bfbdc6a04609bff0d5ccdfcf6b766d95?family=Flood + Std); */
+@font-face {
+  font-family: Flood Std;
+  src: url("../fonts/flood-std/FloodStd.otf");
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    background-color: #fff;
-    color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: #354463;
-    text-decoration: none;
-    display: block;
+  color: #354463;
+  text-decoration: none;
+  display: block;
 }
 
 /*##################################
@@ -33,127 +37,129 @@ a {
 ####################################*/
 
 .container {
-    width: 100%;
-    max-width: 1440px;
-    margin: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Navigation bar Style */
 #navbar {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    height: 12.8rem;
-    justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 12.8rem;
+  justify-content: space-around;
 }
 
 #navbar .title {
-    width: 16rem;
+  margin-left: 5rem;
+  width: 17rem;
 }
 
-#navbar ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.nav-links {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
 }
 
-#navbar ul.nav-links {
-    margin-left: 2rem;
-}
-
-.nav-links li {
-    padding: 0 4rem;
-}
+/* .nav-links li {
+  border: 3px solid red;
+  padding: 0 3rem;
+} */
 
 .nav-links li a:hover {
-    border-bottom: 4px solid teal;
+  border-bottom: 4px solid teal;
 }
 
-.nav-links .donate-link {
-    background: #C1F7D5;
-    border-radius: 10rem;
-    height: 4.8rem;
-    padding-top: .6rem;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    opacity: 1;
+.donate-link {
+  background: #c1f7d5;
+  border-radius: 10rem;
+  height: 4.8rem;
+  padding: 1rem 3rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  opacity: 1;
+  margin-right: 3rem;
 }
 
-.nav-links .donate-link:hover {
-    background-color: rgb(113, 231, 45);
-}
+/*##########################################
+        Style for main
+############################################*/
 
+#main {
+  width: 100%;
+}
 /* The  issue styke start */
 .the-issue-section {
-    height: 68rem;
-    background: transparent url('../images/annie-spratt-135307-unsplash.png') 0% 0% no-repeat padding-box;
-    opacity: 0.76;
+  height: 68rem;
+  background: transparent url("../images/annie-spratt-135307-unsplash.png") 0%
+    0% no-repeat padding-box;
+  opacity: 0.76;
+  background-size: cover;
+  /* width: 100%; */
 }
 
-div.climate-change {
-    display: flex;
-    flex-flow: row wrap;
-    /* justify-items: center; */
-    /* justify-items: center; */
-    /* position: relative; */
+.climate-change {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
 }
 
 #the-issue-header {
-
-    background-color: #000;
-    position: absolute;
-    top: -2rem;
-    left: 13%;
-    padding: 1rem 3rem;
-    opacity: 1;
-    z-index: 1;
+  background-color: #000;
+  position: absolute;
+  top: -2rem;
+  left: 13%;
+  padding: 1rem 3rem;
+  opacity: 1;
+  z-index: 1;
 }
 
 #the-issue-header h3 {
-    font-size: 1.3rem;
-    font-weight: 100;
-    letter-spacing: 0.1rem;
-    color: #fff;
-
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  color: #fff;
 }
 
 .climate-change-banner {
-    background-color: #fff;
-    color: #354463;
-    height: 43rem;
-    width: 54.4rem;
-    margin: 12rem 14rem;
-    position: relative;
+  background-color: #fff;
+  color: #354463;
+  width: 54.4rem;
+  margin-top: 10rem;
+  position: relative;
+  padding-bottom: 7rem;
 }
-
 
 .climate-change-banner h1 {
-
-    font-size: 4.4rem;
-    text-align: left;
-    font-weight: bold;
-    margin-left: 4rem;
-    padding: 5rem 2rem 2rem 2rem;
-    opacity: 1;
-
+  font-size: 4.4rem;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 4rem;
+  padding: 5rem 2rem 2rem 2rem;
+  opacity: 1;
 }
 
-
 .climate-change-banner a {
-    font-size: 1.6rem;
-    margin-left: 4rem;
-    padding: 0 4rem 0rem 2rem;
-    color: #354463;
-    text-decoration: underline;
+  font-size: 1.6rem;
+  margin-left: 4rem;
+  padding: 0 4rem 0rem 2rem;
+  color: #354463;
+  text-decoration: underline;
 }
 
 .climate-change-hashtag {
-    margin-top: 12rem;
-    width: 29.6rem;
-    height: 22.4rem;
-    background: transparent url('../images/stopclimatechange.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
+  margin-top: 12rem;
+  width: 30%;
+  background: transparent url("../images/stopclimatechange.png") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+  margin-left: 10rem;
 }
 
 /* The  issue styke end */
@@ -161,167 +167,153 @@ div.climate-change {
 /* Take action start */
 
 .take-action-section {
-    background-color: #C1F7D5;
-    color: #354463;
-    width: 100%;
-    height: 24rem;
-    margin-top: -1rem;
-    position: relative;
+  background-color: #c1f7d5;
+  color: #354463;
+  width: 100%;
+  height: 24rem;
+  margin-top: -1rem;
+  position: relative;
 }
 
-
 #take-action-header {
-
-    background-color: #000;
-    position: absolute;
-    top: -2rem;
-    left: 45%;
-    padding: 1rem 3rem;
-    opacity: 1;
-    z-index: 1;
+  background-color: #000;
+  position: absolute;
+  top: -2rem;
+  left: 45%;
+  padding: 1rem 3rem;
+  opacity: 1;
+  z-index: 1;
 }
 
 #take-action-header h3 {
-    font-size: 1.3rem;
-    font-weight: 100;
-    letter-spacing: 0.1rem;
-    color: #fff;
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  color: #fff;
 }
 
 .action-lists {
-    display: grid;
-    grid-template-columns: repeat(4, 19%);
-    gap: 2rem;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 19%);
+  gap: 2rem;
+  justify-content: center;
 }
 
 .action-lists div {
-    width: 23.5rem;
-    height: 89rem;
-    margin: 6rem 1rem;
-    padding-top: 2rem;
+  width: 23.5rem;
+  height: 89rem;
+  margin: 6rem 1rem;
+  padding-top: 2rem;
 }
 
 .action-lists div h4 {
-    font-size: 2.8rem;
-    font-weight: bold;
+  font-size: 2.8rem;
+  font-weight: bold;
 }
 
-.action-lists>div p {
-    font-size: 1.6rem;
-    font-weight: 100;
+.action-lists > div p {
+  font-size: 1.6rem;
+  font-weight: 100;
 }
 
 /* Take action end */
 
 /* What we do style start */
 .what-we-do-section {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    background-color: #354463;
-    color: #fff;
-    position: relative;
-    /* height: 1000rem; */
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #354463;
+  color: #fff;
+  position: relative;
+  padding: 5% 10%;
 }
 
 #what-we-do-header {
-    background-color: #fff;
-    color: #000;
-    margin-left: 15rem;
-    margin-top: 8rem;
-    width: 16rem;
-    opacity: 1;
-    z-index: 1;
+  background-color: #fff;
+  color: #000;
+  width: 17rem;
+  opacity: 1;
 }
 
 #what-we-do-header h3 {
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 100;
-    letter-spacing: 0.1rem;
-    padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  padding: 1rem 2rem;
 }
 
+.what-we-do-mission {
+  width: 100%;
+  margin-top: 3rem;
+}
 .what-we-do-mission h1 {
-    margin: 4rem 15rem;
-    font-size: 4.1rem;
-    font-weight: bold;
+  font-size: 4.4rem;
+  font-weight: bold;
 }
-
 
 .mission-cards {
-    margin: 7rem 10rem 0 4rem;
-    display: grid;
-    grid-template-columns: repeat(3, 32rem);
-    gap: 6rem;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .mission-cards div {
-    background-color: #fff;
-    color: #000;
-    height: 52.8rem;
-    margin-bottom: 10rem;
-    position: relative;
-
+  width: 25%;
+  background-color: #fff;
+  color: #000;
+  margin-top: 15rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+.mission-cards .card-2,
+.mission-cards .card-3 {
+  margin-left: 9rem;
 }
 
+.mission-cards .card-1,
+.mission-cards .card-2,
+.mission-cards .card-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 .mission-cards div h2 {
-    margin: 65% 2rem 1rem 3rem;
-    font-size: 2.8rem;
-    text-align: left;
-    color: #354463;
+  padding: 65% 3rem 1rem 3rem;
+  font-size: 2.8rem;
+  text-align: left;
+  color: #354463;
 }
 
 .mission-cards div p {
-    margin: 0 2rem 3rem 3rem;
-    font-size: 1.6rem;
-    text-align: left;
-    color: #354463;
+  padding: 0 2rem 3rem 3rem;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #354463;
 }
 
 .mission-cards div a {
-    margin: 0 13rem 0 3rem;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
-    background-color: #C1F7D5;
-    color: #354463;
-    border-radius: 10rem;
-    padding: .8rem;
-
+  margin: 4rem 6rem 0 3rem;
+  width: 55%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #c1f7d5;
+  color: #354463;
+  border-radius: 10rem;
+  padding: 1rem;
 }
 
-.mission-card-img-1 {
-    height: 22.4rem;
-    width: 32.2rem;
-    background: transparent url('../images/tree-planting.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-    position: absolute;
-    right: -3rem;
-    top: -3rem;
-}
-
-.mission-card-img-2 {
-    height: 22.4rem;
-    width: 32.2rem;
-    background: transparent url('../images/education-training.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-    position: absolute;
-    right: -3rem;
-    top: -3rem;
-}
-
-.mission-card-img-3 {
-    height: 22.4rem;
-    width: 32.2rem;
-    background: transparent url('../images/advocacy.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-    position: absolute;
-    right: -3rem;
-    top: -3rem;
+.mission-cards .mission-card-img {
+  width: 100%;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  right: -3rem;
+  top: -3rem;
+  z-index: 1;
+  opacity: 1;
 }
 
 /* What we do style end */
@@ -330,24 +322,24 @@ div.climate-change {
         Donation Page Styling
 ##########################################*/
 .donation-container {
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* Donation header style start */
 .donation-container #header {
-    height: 12rem;
-    background-color: #fff;
+  height: 12rem;
+  background-color: #fff;
 }
 
 .title-header {
-    text-align: center;
-    margin: 1.6rem auto;
-    width: 20rem;
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #354463;
-    opacity: 1;
+  text-align: center;
+  margin: 1.6rem auto;
+  width: 20rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #354463;
+  opacity: 1;
 }
 
 /* Donation header style end */
@@ -355,259 +347,270 @@ div.climate-change {
 /* Donation main style start */
 
 .donation-container main {
-    background: transparent url('../images/annie-spratt-427340-unsplash-donation.png') 0% 0% no-repeat padding-box;
-    background-size: cover;
-    opacity: 1;
-    height: 125vh;
+  background: transparent
+    url("../images/annie-spratt-427340-unsplash-donation.png") 0% 0% no-repeat
+    padding-box;
+  background-size: cover;
+  opacity: 1;
+  height: 125vh;
 }
 
 .payment-and-information-section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin-top: 6%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 6%;
 }
 
-.payment-and-information-section>.form-information {
-    background-color: #354463;
-    width: 41%;
-
+.form-information {
+  background-color: #354463;
+  width: 41%;
 }
 
-.payment-and-information-section>.text-banner {
-    width: 30%;
+.text-banner {
+  width: 30%;
 }
 
 .form-information form {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 5rem;
-
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5rem;
 }
 
 .form-information form div {
-
-    margin: 1rem 0rem 0 0;
+  margin: 1rem 0rem 0 0;
 }
 
 .form-information form h4 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #FFFFFF;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .form-information form label {
-    font-size: 1.4rem;
-    font-weight: 300;
-    letter-spacing: 0.056rem;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    text-align: left;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.056rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .form-information form input {
-    font-size: 1.8rem;
-    font-weight: 400;
-    letter-spacing: -0.04rem;
-    text-align: left;
-    color: #FFFFFF;
-    border: none;
-    background-color: transparent;
-    margin: 1rem 0;
-    outline: none;
-
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+  text-align: left;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  margin: 1rem 0;
+  outline: none;
 }
 
-
-.form-information form div>div {
-    margin: 0.2rem 0;
-    border-bottom: 2px solid #C1F7D5;
+.form-information form div > div {
+  margin: 0.2rem 0;
+  border-bottom: 2px solid #c1f7d5;
 }
 
 .form-information form .name {
-    display: grid;
-    grid-template-columns: repeat(2, 37%);
-    gap: 5rem;
-
+  display: grid;
+  grid-template-columns: repeat(2, 37%);
+  gap: 5rem;
 }
 
 .form-information form .street,
 form .email-address,
 form .card,
 form .donation-message {
-    display: grid;
-    grid-template-columns: 83%;
+  display: grid;
+  grid-template-columns: 83%;
 }
 
 .form-information form .city-state-zip {
-    display: grid;
-    grid-template-columns: 36% repeat(2, 15%);
-    gap: 5rem;
+  display: grid;
+  grid-template-columns: 36% repeat(2, 15%);
+  gap: 5rem;
 }
 
 .form-information #state {
-    margin-top: 1rem;
-    font-size: 1.8rem;
-    background-color: transparent;
-    width: 9rem;
-    border: none;
-    outline: none;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  background-color: transparent;
+  width: 9rem;
+  border: none;
+  outline: none;
+  color: #fff;
 }
 
-
 .form-information #state option {
-    margin-top: 2rem;
-    font-size: 1.4rem;
-    background-color: #354463;
-    color: #fff;
-    width: 10rem;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  background-color: #354463;
+  color: #fff;
+  width: 10rem;
 }
 
 .form-information form .card-expiry {
-    display: grid;
-    grid-template-columns: repeat(2, 10rem) 13rem;
-    gap: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 10rem) 13rem;
+  gap: 6rem;
 }
 
 .payment-heading h4 {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .donation-message h2 {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .form-information form .payment-links {
-    display: grid;
-    grid-template-columns: 30% 42%;
-    gap: 6rem;
-    margin-bottom: 0;
+  display: grid;
+  grid-template-columns: 30% 42%;
+  gap: 6rem;
+  margin-bottom: 0;
 }
 
 .form-information form .donation-message h2 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #FFFFFF;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .form-information form a.back-btn {
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: -0.016rem;
-    text-align: left;
-    text-decoration: underline;
-    color: #C1F7D5;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.016rem;
+  text-align: left;
+  text-decoration: underline;
+  color: #c1f7d5;
 }
 
 .form-information form a.payment-proceed-btn {
-    font-size: 2.2rem;
-    font-weight: bold;
-    text-align: center;
-    background-color: #C1F7D5;
-    color: #354463;
-    border-radius: 10rem;
-    padding: 1rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #c1f7d5;
+  color: #354463;
+  border-radius: 10rem;
+  padding: 1rem;
 }
 
 .form-information form a.back-btn:hover {
-    color: tomato;
+  color: tomato;
 }
 
 .form-information form a.payment-proceed-btn:hover {
-    background-color: rgb(113, 231, 45);
+  background-color: rgb(113, 231, 45);
 }
 
 .text-banner h1 {
-    text-align: left;
-    line-height: 1.1;
-    font-size: 7.2rem;
-    font-family: Flood Std;
-    color: #FFFFFF;
-    opacity: 1;
+  text-align: left;
+  line-height: 1.1;
+  font-size: 7.2rem;
+  font-family: Flood Std;
+  color: #ffffff;
+  opacity: 1;
 }
 
-/* Dontion Footer */
+/*######################################################
+            Footer Styling
+#######################################################*/
 #footer {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    align-items: baseline;
-    background-color: #fff;
-    color: #354463;
-    height: 34rem;
-    margin-top: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-items: baseline;
+  background-color: #fff;
+  color: #354463;
+  height: 34rem;
+  /* margin-top: 10rem; */
+  width: 100%;
+  margin: 0 auto;
 }
 
 .footer-header {
-    margin-right: 10rem;
-    width: 17rem;
-
+  /* margin-right: 10%; */
+  width: 28rem;
 }
 
 .footer-header h1 {
-    font-size: 2.4rem;
-    font-weight: bold;
-    text-align: left;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 10rem 5rem;
 }
 
 .footer-hashtag {
-    width: 20rem;
-    margin-left: 8rem;
+  width: 20rem;
+  margin-right: 8rem;
 }
 
 .footer-hashtag h2 {
-    font-weight: normal;
-    text-align: right;
-    font-size: 4.4rem;
-    font-family: flood std;
-    color: #354463;
-    line-height: 1.1;
+  font-weight: normal;
+  text-align: right;
+  font-size: 4.4rem;
+  font-family: flood std;
+  color: #354463;
+  line-height: 1.1;
 }
 
 #footer section.address-and-links {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .address-and-links div.contact-us,
 div.links,
 div.social-links {
-    width: 15rem;
-    margin: 0 2rem;
+  width: 15rem;
+  margin: 0 2rem;
 }
 
 .address-and-links div h4 {
-    font-size: 1.4rem;
-    text-align: left;
-    letter-spacing: 0.056rem;
-    text-transform: uppercase;
-    font-weight: normal;
-    padding-bottom: .5rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #354463;
-    color: #354463;
+  font-size: 1.4rem;
+  text-align: left;
+  letter-spacing: 0.056rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #354463;
+  color: #354463;
 }
 
 .address-and-links div a {
-    font-size: 1.3rem;
-    text-align: left;
-    font-weight: 300;
-    letter-spacing: -0.14px;
-    text-transform: capitalize;
-    color: #354463;
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 300;
+  letter-spacing: -0.14px;
+  text-transform: capitalize;
+  color: #354463;
 }
 
 .address-and-links div a:hover {
-    border-bottom: 2px solid #354463;
+  border-bottom: 2px solid #354463;
 }
 
 .address-and-links div address {
-    display: block;
-    font-size: 1.3rem;
-    text-align: left;
-    font-weight: 300;
-    font-style: normal;
-    letter-spacing: -0.14px;
-    color: #354463;
+  display: block;
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.14px;
+  color: #354463;
+}
+
+/*####################################################
+                Tablet View
+#####################################################*/
+
+@media (max-width: 768px) {
+  body {
+    background-color: tomato;
+  }
 }
