@@ -63,11 +63,6 @@ a {
   width: 60%;
 }
 
-/* .nav-links li {
-  border: 3px solid red;
-  padding: 0 3rem;
-} */
-
 .nav-links li a:hover {
   border-bottom: 4px solid teal;
 }
@@ -153,16 +148,15 @@ a {
   text-decoration: underline;
 }
 
-.climate-change-hashtag {
+.climate-change-hashtag-img {
   margin-top: 12rem;
-  width: 30%;
-  background: transparent url("../images/stopclimatechange.png") 0% 0% no-repeat
-    padding-box;
+  height: 10%;
+  /* width: 30%; */
   opacity: 1;
   margin-left: 10rem;
 }
 
-/* The  issue styke end */
+/* The  issue style end */
 
 /* Take action start */
 
@@ -170,7 +164,6 @@ a {
   background-color: #c1f7d5;
   color: #354463;
   width: 100%;
-  height: 24rem;
   margin-top: -1rem;
   position: relative;
 }
@@ -178,7 +171,7 @@ a {
 #take-action-header {
   background-color: #000;
   position: absolute;
-  top: -2rem;
+  margin-top: -2rem;
   left: 45%;
   padding: 1rem 3rem;
   opacity: 1;
@@ -200,8 +193,6 @@ a {
 }
 
 .action-lists div {
-  width: 23.5rem;
-  height: 89rem;
   margin: 6rem 1rem;
   padding-top: 2rem;
 }
@@ -212,7 +203,7 @@ a {
 }
 
 .action-lists > div p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 100;
 }
 
@@ -259,7 +250,7 @@ a {
   justify-content: flex-start;
 }
 
-.mission-cards div {
+.mission-cards .card {
   width: 25%;
   background-color: #fff;
   color: #000;
@@ -280,7 +271,7 @@ a {
 }
 
 .mission-cards div h2 {
-  padding: 65% 3rem 1rem 3rem;
+  padding: 3rem 3rem 1rem 3rem;
   font-size: 2.8rem;
   text-align: left;
   color: #354463;
@@ -288,13 +279,14 @@ a {
 
 .mission-cards div p {
   padding: 0 2rem 3rem 3rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: left;
   color: #354463;
+  letter-spacing: -0.16px;
 }
 
-.mission-cards div a {
-  margin: 4rem 6rem 0 3rem;
+.mission-cards .card a {
+  margin: 4rem 6rem 3rem 3rem;
   width: 55%;
   font-size: 1.8rem;
   font-weight: bold;
@@ -309,9 +301,8 @@ a {
   width: 100%;
   background-size: cover;
   opacity: 1;
-  position: absolute;
-  right: -3rem;
-  top: -3rem;
+  margin-top: -4rem;
+  margin-left: 4rem;
   z-index: 1;
   opacity: 1;
 }
@@ -609,8 +600,260 @@ div.social-links {
                 Tablet View
 #####################################################*/
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   body {
-    background-color: tomato;
+    color: red;
+    background-color: orange;
   }
+  .the-issue-section {
+    height: 80vh;
+    background: transparent url("../images/annie-spratt-135307-unsplash.png") 0%
+      0% no-repeat padding-box;
+    opacity: 0.76;
+    background-size: cover;
+    /* width: 100%; */
+  }
+
+  .climate-change {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
+    /* position: relative; */
+    /* width: 80%; */
+    /* margin-bottom:  20rem; */
+    /* margin: auto; */
+  }
+  #the-issue-header {
+    background-color: #000;
+    position: absolute;
+    top: -2rem;
+    left: 9%;
+    padding: 1.5rem 5rem;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  #the-issue-header h3 {
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    color: #fff;
+  }
+
+  .climate-change-banner {
+    background-color: #fff;
+    color: #354463;
+    width: 100%;
+    margin-top: 40rem;
+    position: relative;
+    padding-bottom: 7rem;
+  }
+
+  .climate-change-banner h1 {
+    font-size: 4.6rem;
+    text-align: left;
+    font-weight: bold;
+    padding: 5rem 5rem 2rem 4rem;
+    opacity: 1;
+  }
+
+  .climate-change-banner a {
+    font-size: 2rem;
+    padding: 0 5rem 0rem 4rem;
+    color: #354463;
+    text-decoration: underline;
+  }
+
+  .climate-change-hashtag-img {
+    margin-top: 12rem;
+    margin-left: 0;
+    height: 25%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  /* The  issue style end */
+
+  /* Take action start */
+
+  .take-action-section {
+    background-color: #c1f7d5;
+    color: #354463;
+    width: 100%;
+    margin-top: -1rem;
+  }
+
+  #take-action-header {
+    background-color: #000;
+    position: absolute;
+    left: 40%;
+    margin-top: -2rem;
+    padding: 1.5rem 4rem;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  #take-action-header h3 {
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    color: #fff;
+  }
+
+  .action-lists {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    gap: 4rem;
+    justify-content: center;
+    z-index: 1;
+    padding: 4rem 4rem;
+  }
+
+  .action-lists div {
+    margin: 1rem;
+  }
+
+  .action-lists div h4 {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+
+  .action-lists > div p {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  /* Take action end */
+
+  /*################################
+      What we do medium device style
+  ##################################*/
+  .what-we-do-section {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #354463;
+    color: #fff;
+    position: relative;
+    padding: 5% 10%;
+  }
+
+  #what-we-do-header {
+    background-color: #fff;
+    color: #000;
+    width: 20rem;
+    opacity: 1;
+    padding: 1rem 1rem;
+  }
+
+  #what-we-do-header h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+  }
+
+  .what-we-do-mission {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .what-we-do-mission h1 {
+    font-size: 4.4rem;
+    font-weight: bold;
+  }
+
+  .mission-cards {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+
+  .mission-cards .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 20% 5%;
+    gap: 3rem;
+    grid-template-areas:
+      "img div"
+      "link div";
+    background-color: #fff;
+    color: #000;
+    margin-top: 12rem;
+    padding-bottom: 9%;
+    position: relative;
+    width: 100%;
+  }
+
+  .mission-cards .card img {
+    grid-area: img;
+    width: 90%;
+    background-size: cover;
+    opacity: 1;
+    margin-top: -4rem;
+    margin-left: 3rem;
+    z-index: 1;
+    opacity: 1;
+  }
+  .mission-cards .card div {
+    grid-area: div;
+    padding-right: 3rem;
+  }
+  .mission-cards .card a {
+    grid-area: link;
+    position: absolute;
+    right: 0;
+
+    /* width: 55%; */
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #c1f7d5;
+    color: #354463;
+    border-radius: 10rem;
+    padding: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .mission-cards .card-2,
+  .mission-cards .card-3 {
+    margin-left: 0;
+  }
+
+  .mission-cards div h2 {
+    padding: 2.8rem;
+    font-size: 2.8rem;
+    text-align: left;
+    color: #354463;
+  }
+
+  .mission-cards div p {
+    padding: 0 2rem;
+    font-size: 2rem;
+    text-align: left;
+    color: #354463;
+    letter-spacing: -0.16px;
+  }
+
+  /* .mission-cards div a {
+    margin: 4rem 6rem 0 3rem;
+    width: 55%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #c1f7d5;
+    color: #354463;
+    border-radius: 10rem;
+    padding: 1rem;
+  } */
+
+  /* .mission-cards .mission-card-img {
+    background-size: cover;
+    opacity: 1;
+    margin-top: -4rem;
+    margin-left: 3rem;
+    z-index: 1;
+    opacity: 1;
+  } */
 }
