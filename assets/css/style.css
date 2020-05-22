@@ -297,7 +297,7 @@ a {
   padding: 1rem;
 }
 
-.mission-cards .mission-card-img {
+.mission-cards .card img {
   width: 100%;
   background-size: cover;
   opacity: 1;
@@ -508,94 +508,6 @@ form .donation-message {
 /*######################################################
             Footer Styling
 #######################################################*/
-/* #footer {
-  width: 100%;
-  background-color: #fff;
-}
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  align-items: baseline;
-  background-color: #fff;
-  color: #354463;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.footer-header {
-  width: 25rem;
-}
-
-.footer-header h1 {
-  font-size: 2.4rem;
-  font-weight: bold;
-  text-align: left;
-  padding: 10rem 3rem;
-}
-
-.footer-hashtag {
-  width: 20rem;
-}
-
-.footer-hashtag h2 {
-  font-weight: normal;
-  text-align: right;
-  font-size: 4.4rem;
-  font-family: flood std;
-  color: #354463;
-  line-height: 1.1;
-}
-
-#footer section.address-and-links {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 45%;
-}
-
-.address-and-links div.contact-us,
-div.links,
-div.social-links {
-  width: 33%;
-  padding: 0 2rem;
-}
-
-.address-and-links div h4 {
-  font-size: 1.4rem;
-  text-align: left;
-  letter-spacing: 0.056rem;
-  text-transform: uppercase;
-  font-weight: normal;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #354463;
-  color: #354463;
-}
-
-.address-and-links div a {
-  font-size: 1.3rem;
-  text-align: left;
-  font-weight: 300;
-  letter-spacing: -0.14px;
-  text-transform: capitalize;
-  color: #354463;
-}
-
-.address-and-links div a:hover {
-  border-bottom: 2px solid #354463;
-}
-
-.address-and-links div address {
-  display: block;
-  font-size: 1.3rem;
-  text-align: left;
-  font-weight: 300;
-  font-style: normal;
-  letter-spacing: -0.14px;
-  color: #354463;
-} */
 
 #footer {
   width: 100%;
@@ -635,13 +547,6 @@ div.social-links {
   font-family: flood std;
   color: #354463;
   line-height: 1.1;
-}
-
-#footer section.address-and-links {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .contact-us {
@@ -686,11 +591,10 @@ div.social-links {
                 Tablet View
 #####################################################*/
 
-@media screen and (max-width: 1199px) {
-  body {
-    color: red;
-    background-color: orange;
-  }
+@media screen and (max-width: 1200px) {
+  /*##################################
+      Main section medium device styling
+  ####################################*/
   .the-issue-section {
     height: 80vh;
     background: transparent url("../images/annie-spratt-135307-unsplash.png") 0%
@@ -704,10 +608,6 @@ div.social-links {
     display: flex;
     flex-flow: column-reverse wrap;
     justify-content: center;
-    /* position: relative; */
-    /* width: 80%; */
-    /* margin-bottom:  20rem; */
-    /* margin: auto; */
   }
   #the-issue-header {
     background-color: #000;
@@ -889,9 +789,7 @@ div.social-links {
   .mission-cards .card a {
     grid-area: link;
     position: absolute;
-    right: 0;
-
-    /* width: 55%; */
+    /* right: 0; */
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
@@ -930,10 +828,16 @@ div.social-links {
     background-color: #fff;
   }
   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "footer-header contact-us social-links"
+      ". links footer-hashtag";
+    justify-content: space-around;
+    justify-items: start;
     align-items: baseline;
+    gap: 3rem;
     background-color: #fff;
     color: #354463;
     width: 80%;
@@ -942,53 +846,56 @@ div.social-links {
   }
 
   .footer-header {
-    width: 23rem;
+    grid-area: footer-header;
+    width: 25rem;
+  }
+  .contact-us {
+    width: 100%;
+    grid-area: contact-us;
+  }
+  .social-links {
+    grid-area: social-links;
+    width: 100%;
+  }
+  .links {
+    grid-area: links;
+    width: 100%;
+  }
+  .footer-hashtag {
+    grid-area: footer-hashtag;
+    width: 100%;
   }
 
   .footer-header h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: bold;
     text-align: left;
     padding: 10rem 3rem;
   }
 
-  .footer-hashtag {
-    width: 20rem;
-  }
-
   .footer-hashtag h2 {
     font-weight: normal;
     text-align: right;
-    font-size: 4.4rem;
+    font-size: 4.8rem;
     font-family: flood std;
     color: #354463;
     line-height: 1.1;
   }
 
-  #footer section.address-and-links {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .contact-us {
-    width: 10%;
-  }
   .footer-content div h4 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-align: left;
     letter-spacing: 0.056rem;
     text-transform: uppercase;
     font-weight: normal;
     padding-bottom: 0.5rem;
+    border-bottom: none;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #354463;
     color: #354463;
   }
 
   .footer-content div a {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-align: left;
     font-weight: 300;
     letter-spacing: -0.14px;
@@ -1002,7 +909,369 @@ div.social-links {
 
   .footer-content div address {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    text-align: left;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: -0.14px;
+    color: #354463;
+  }
+}
+
+/*###############################################
+    Tablet or small-medium devices
+##################################################*/
+@media screen and (max-width: 980px) {
+  /* Navigation bar Style */
+  #navbar {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "title donate-link"
+      "nav-links donate-link";
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #navbar .title {
+    width: 17rem;
+    grid-area: title;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    grid-area: nav-links;
+  }
+  .nav-links a {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .nav-links li a:hover {
+    border-bottom: 4px solid teal;
+  }
+
+  .donate-link {
+    background: #c1f7d5;
+    border-radius: 10rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 1;
+    grid-area: donate-link;
+  }
+}
+
+/*###############################################
+    Mobile or small-tablet devices
+##################################################*/
+@media screen and (max-width: 710px) {
+  /* Navigation bar Style */
+  #navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "title nav-links"
+      "donate-link donate-link";
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #navbar .title {
+    width: 17rem;
+    grid-area: title;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    grid-area: nav-links;
+  }
+  .nav-links a {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .nav-links li a:hover {
+    border-bottom: 4px solid teal;
+  }
+
+  .donate-link {
+    background: #c1f7d5;
+    border-radius: 10rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 1;
+    grid-area: donate-link;
+  }
+
+  /*##################################
+      Main section medium device styling
+  ####################################*/
+
+  .the-issue-section {
+    min-height: 85vh;
+    /* background: transparent url("../images/annie-spratt-135307-unsplash.png") 0%
+    0% no-repeat padding-box;
+  opacity: 0.76;
+  background-size: fit; */
+    /* width: 100%; */
+  }
+
+  #the-issue-header h3 {
+    font-size: 1.6rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    color: #fff;
+  }
+
+  .climate-change-banner h1 {
+    font-size: 2.8rem;
+    text-align: left;
+    font-weight: bold;
+    padding: 5rem 5rem 2rem 4rem;
+    opacity: 1;
+  }
+
+  .climate-change-banner a {
+    font-size: 1.7rem;
+    padding: 0 5rem 0rem 4rem;
+    color: #354463;
+    text-decoration: underline;
+  }
+
+  /* The  issue style end */
+
+  /* Take action start */
+
+  #take-action-header {
+    background-color: #000;
+    transform: translate(-30%);
+    padding: 1rem 3rem;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  #take-action-header h3 {
+    font-size: 1.6rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    color: #fff;
+  }
+  /* Take action end */
+
+  /* What we do style start */
+  .what-we-do-section {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #354463;
+    color: #fff;
+    position: relative;
+    padding: 5% 10%;
+    align-items: center;
+  }
+  /*################################
+      What we do medium device style
+  ##################################*/
+  .what-we-do-section {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #354463;
+    color: #fff;
+    position: relative;
+    padding: 5% 10%;
+    align-items: center;
+  }
+
+  #what-we-do-header {
+    background-color: #fff;
+    color: #000;
+    width: 20rem;
+    opacity: 1;
+    padding: 1rem 1rem;
+  }
+
+  #what-we-do-header h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+  }
+
+  .what-we-do-mission {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .what-we-do-mission h1 {
+    font-size: 4.4rem;
+    font-weight: bold;
+  }
+
+  .mission-cards {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+
+  .mission-cards .card {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #fff;
+    color: #000;
+    margin-top: 12rem;
+    padding-bottom: 9%;
+  }
+
+  .mission-cards .card img {
+    margin: 0 auto;
+    width: 80%;
+    background-size: cover;
+    opacity: 1;
+    z-index: 1;
+    margin-bottom: 5rem;
+    margin-top: -4rem;
+  }
+  .mission-cards .card div {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 5rem;
+  }
+  .mission-cards .card a {
+    margin: 0 auto;
+    width: 40%;
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #c1f7d5;
+    color: #354463;
+    border-radius: 10rem;
+    padding: 1rem 0rem;
+  }
+
+  .mission-cards div h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #354463;
+  }
+
+  .mission-cards div p {
+    font-size: 2rem;
+    text-align: center;
+    color: #354463;
+    letter-spacing: -0.16px;
+  }
+
+  /*######################################################
+            Footer Styling
+#######################################################*/
+  #footer {
+    width: 100%;
+    background-color: #fff;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-areas:
+      "footer-header contact-us"
+      "social-links links"
+      ". footer-hashtag";
+    justify-content: space-around;
+    justify-items: start;
+    align-items: baseline;
+    gap: 10%;
+    background-color: #fff;
+    color: #354463;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+
+  .footer-header {
+    grid-area: footer-header;
+    width: 20rem;
+  }
+  .contact-us {
+    width: 100%;
+    grid-area: contact-us;
+  }
+  .social-links {
+    grid-area: social-links;
+    width: 100%;
+  }
+  .links {
+    grid-area: links;
+    width: 100%;
+  }
+  .footer-hashtag {
+    grid-area: footer-hashtag;
+    width: 100%;
+    margin-top: -10rem;
+  }
+
+  .footer-header h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 10rem 0;
+  }
+
+  .footer-hashtag h2 {
+    font-weight: normal;
+    text-align: right;
+    font-size: 4.8rem;
+    font-family: flood std;
+    color: #354463;
+    line-height: 1.1;
+  }
+
+  .footer-content div h4 {
+    font-size: 1.8rem;
+    text-align: left;
+    letter-spacing: 0.056rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+    border-bottom: none;
+    margin-bottom: 1rem;
+    color: #354463;
+  }
+
+  .footer-content div a {
+    font-size: 1.6rem;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: -0.14px;
+    text-transform: capitalize;
+    color: #354463;
+  }
+
+  .footer-content div a:hover {
+    border-bottom: 2px solid #354463;
+  }
+
+  .footer-content div address {
+    display: block;
+    font-size: 1.6rem;
     text-align: left;
     font-weight: 300;
     font-style: normal;
