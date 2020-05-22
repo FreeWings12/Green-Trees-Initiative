@@ -17,91 +17,91 @@
         </header>
         <main id="donation-main">
             <section class="payment-and-information-section">
-                <div class="form-information">
-                    <form action="#">
-                        <div class="info-heading">
-                            <h4>Your Information</h4>
+                <!-- <div class="form-information"> -->
+                <form action="#" class="form-information">
+                    <div class="info-heading">
+                        <h4>Your Information</h4>
+                    </div>
+                    <div class="name">
+                        <div class="first-name nested-div">
+                            <label for="first-name">First Name</label><br>
+                            <input type="text" name="first-name" id="first-name" placeholder="First Name">
                         </div>
-                        <div class="name">
-                            <div class="first-name-class">
-                                <label for="first-name">First Name</label><br>
-                                <input type="text" name="first-name" id="first-name" placeholder="First Name">
-                            </div>
-                            <div class="last-name-class">
+                        <div class="last-name-class nested-div">
 
-                                <label for="last-name">Last Name</label><br>
-                                <input type="text" name="last-name" id="last-name" placeholder="Last name"><br>
-                            </div>
+                            <label for="last-name">Last Name</label><br>
+                            <input type="text" name="last-name" id="last-name" placeholder="Last name"><br>
                         </div>
-                        <div class="street">
-                            <div>
-                                <label for="street-address">Street Address</label><br>
-                                <input type="text" placeholder="Street address" id="street-address"><br>
-                            </div>
+                    </div>
+                    <div class="street">
+                        <div class="nested-div">
+                            <label for="street-address">Street Address</label><br>
+                            <input type="text" placeholder="Street address" id="street-address"><br>
                         </div>
+                    </div>
 
-                        <div class="city-state-zip">
-                            <div class="city-name">
-                                <label for="city">City</label><br>
-                                <input type="text" name="city" placeholder="City" id="city">
-                            </div>
-                            <div class="state-name">
-                                <label for="state">State</label><br>
-                                <select name="state" id="state">
-                                    <option value="al">AL</option>
-                                    <option value="as">AS</option>
-                                    <option value="ka">KA</option>
-                                </select>
-                            </div>
-                            <div class="zip">
-                                <label for="zip-code">Zip Code</label><br>
-                                <input type="text" name="zip-code" id="zip-code" placeholder="Zip code"><br>
-                            </div>
+                    <div class="city-state-zip">
+                        <div class="city-name nested-div">
+                            <label for="city">City</label><br>
+                            <input type="text" name="city" placeholder="City" id="city">
                         </div>
-                        <div class="email-address">
-                            <div>
+                        <div class="state-name nested-div">
+                            <label for="state">State</label><br>
+                            <select name="state" id="state">
+                                <option value="al">AL</option>
+                                <option value="as">AS</option>
+                                <option value="ka">KA</option>
+                            </select>
+                        </div>
+                        <div class="zip nested-div">
+                            <label for="zip-code">Zip Code</label><br>
+                            <input type="text" name="zip-code" id="zip-code" placeholder="Zip code"><br>
+                        </div>
+                    </div>
+                    <div class="email-address">
+                        <div class="nested-div">
 
-                                <label for="email">Email Address</label><br>
-                                <input type="email" name="email" id="email" placeholder="Email address">
-                            </div>
+                            <label for="email">Email Address</label><br>
+                            <input type="email" name="email" id="email" placeholder="Email address">
                         </div>
+                    </div>
 
-                        <div class="payment-heading">
-                            <h4>Payment Information</h4>
+                    <div class="payment-heading">
+                        <h4>Payment Information</h4>
+                    </div>
+                    <div class="card">
+                        <div class="nested-div">
+                            <label for="card-number">Credit Card Number</label><br>
+                            <input type="text" name="card-number" id="card-number" placeholder="Card number"><br>
                         </div>
-                        <div class="card">
-                            <div>
-                                <label for="card-number">Credit Card Number</label><br>
-                                <input type="text" name="card-number" id="card-number" placeholder="Card number"><br>
-                            </div>
-                        </div>
-                        <div class="card-expiry">
-                            <div class="card-expiry-month">
+                    </div>
+                    <div class="card-expiry">
+                        <div class="card-expiry-month nested-div">
 
-                                <label for="">Expiration</label><br>
-                                <input type="text" name="expiry-month" id="expiry-month" placeholder="MM">
-                            </div>
-                            <div class="card-expiry-year">
-                                <label for=""></label><br>
-                                <input type="text" name="expiry-year" id="expiry-year" placeholder="YYYY"><br>
-                            </div>
-                            <div class="card-cvc-code">
-
-                                <label for="cvc-code">Security Code</label><br>
-                                <input type="text" name="cvc-code" id="cvc-code" placeholder="CVC"><br>
-                            </div>
+                            <label for="">Expiration</label><br>
+                            <input type="text" name="expiry-month" id="expiry-month" placeholder="MM">
                         </div>
-                        <div class="donation-message">
-
-                            <h2>Click the button to confirm your donation of $10, recurring monthly.</h2>
+                        <div class="card-expiry-year nested-div">
+                            <label for=""></label><br>
+                            <input type="text" name="expiry-year" id="expiry-year" placeholder="YYYY"><br>
                         </div>
-                        <div class="payment-links">
+                        <div class="card-cvc-code nested-div">
 
-                            <a href="#" class="back-btn">Go back</a>
-                            <a href="#" class="payment-proceed-btn">Process Payment</a>
+                            <label for="cvc-code">Security Code</label><br>
+                            <input type="text" name="cvc-code" id="cvc-code" placeholder="CVC"><br>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="donation-message">
+
+                        <h2>Click the button to confirm your donation of $10, recurring monthly.</h2>
+                    </div>
+                    <div class="payment-links">
+
+                        <a href="#" class="back-btn">Go back</a>
+                        <a href="#" class="payment-proceed-btn">Process Payment</a>
+                    </div>
+                </form>
+                <!-- </div> -->
                 <div class="text-banner">
                     <h1>Give HOPE to those Who need It most</h1>
                 </div>
@@ -110,14 +110,15 @@
 
         </main>
         <footer id="footer">
-            <header class="footer-header">
-                <h1><a href="index.html">The Green Trees Initiative</a></h1>
-            </header>
-            <section class="address-and-links">
+            <div class="footer-content">
+                <header class="footer-header">
+                    <h1><a href="index.html">The Green Trees Initiative</a></h1>
+                </header>
+                <!-- <section class="address-and-links"> -->
 
                 <div class="contact-us">
                     <h4>CONTACT US</h4>
-                    <address>123 Anywhere St. Cityname, NY 11206 (123) 456-7890 contact@npo.org</address>
+                    <address>123 Anywhere St. <br> Cityname, NY 11206 <br> (123) 456-7890 <br> contact@npo.org</address>
                 </div>
                 <div class="links">
                     <h4>Links</h4>
@@ -133,9 +134,10 @@
                     <a href="#">Twitter</a>
                     <a href="#">Medium</a>
                 </div>
-            </section>
-            <div class="footer-hashtag">
-                <h2>#stop climate change</h2>
+                <!-- </section> -->
+                <div class="footer-hashtag">
+                    <h2>#stop climate change</h2>
+                </div>
             </div>
         </footer>
     </div>

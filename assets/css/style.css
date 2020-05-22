@@ -312,10 +312,6 @@ a {
 /*##########################################
         Donation Page Styling
 ##########################################*/
-.donation-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
 
 /* Donation header style start */
 .donation-container #header {
@@ -337,7 +333,7 @@ a {
 
 /* Donation main style start */
 
-.donation-container main {
+#donation-main {
   background: transparent
     url("../images/annie-spratt-427340-unsplash-donation.png") 0% 0% no-repeat
     padding-box;
@@ -345,37 +341,150 @@ a {
   opacity: 1;
   height: 125vh;
 }
-
 .payment-and-information-section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  margin-top: 6%;
+  width: 80%;
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+.form-information {
+  margin: 10rem 0;
+  background-color: #354463;
+  color: #fff;
 }
 
 .form-information {
-  background-color: #354463;
-  width: 41%;
-}
-
-.text-banner {
-  width: 30%;
-}
-
-.form-information form {
   display: flex;
   flex-flow: column wrap;
-  padding: 5rem;
+  margin: 10rem auto;
+  padding: 0 5rem;
 }
+
+.form-information div h4 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 3rem 0 1rem 0;
+}
+
+.form-information label {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.056rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.form-information input {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+  text-align: left;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  margin: 0.5rem 0;
+  outline: none;
+}
+
+.form-information div > div {
+  /* margin: 0.2rem 0; */
+  padding: 0.6rem 0;
+}
+
+.form-information .name {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  gap: 10%;
+}
+.form-information .city-state-zip {
+  display: grid;
+  grid-template-columns: 45% repeat(2, 17%);
+  gap: 10%;
+}
+
+.form-information #state {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  background-color: transparent;
+  width: 12rem;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.form-information #state option {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  background-color: #354463;
+  color: #fff;
+}
+
+.form-information .card-expiry {
+  display: grid;
+  grid-template-columns: repeat(2, 10%) 20%;
+  gap: 5%;
+}
+
+.nested-div {
+  border-bottom: 2px solid #c1f7d5;
+}
+
+.form-information .donation-message h2 {
+  padding: 5rem 0;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-information .payment-links {
+  display: grid;
+  grid-template-columns: 30% 42%;
+  gap: 6rem;
+  padding-bottom: 5rem;
+  justify-content: space-between;
+}
+
+.form-information a.back-btn {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.016rem;
+  text-align: left;
+  text-decoration: underline;
+  color: #c1f7d5;
+}
+
+.form-information a.payment-proceed-btn {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #c1f7d5;
+  color: #354463;
+  border-radius: 10rem;
+  padding: 1rem;
+}
+
+/*#######################################
+          Text Banner Style
+########################################*/
+.text-banner {
+  margin: 10rem 0;
+}
+
+.text-banner h1 {
+  font-size: 7rem;
+  font-family: Flood Std;
+  font-weight: Regular;
+  color: #fff;
+  text-align: left;
+  opacity: 1;
+}
+/*
 
 .form-information form div {
   margin: 1rem 0rem 0 0;
-}
-
-.form-information form h4 {
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: #ffffff;
 }
 
 .form-information form label {
@@ -503,7 +612,7 @@ form .donation-message {
   font-family: Flood Std;
   color: #ffffff;
   opacity: 1;
-}
+} */
 
 /*######################################################
             Footer Styling
@@ -1279,3 +1388,199 @@ form .donation-message {
     color: #354463;
   }
 }
+
+/*##########################################
+        Donation Page Styling
+##########################################*/
+/* .donation-container {
+  display: grid;
+  grid-template-columns: 1fr;
+} */
+
+/* Donation header style start */
+/* .donation-container #header {
+  height: 12rem;
+  background-color: #fff;
+}
+
+.title-header {
+  text-align: center;
+  margin: 1.6rem auto;
+  width: 20rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #354463;
+  opacity: 1;
+} */
+
+/* Donation header style end */
+
+/* Donation main style start */
+/* 
+.donation-container main {
+  background: transparent
+    url("../images/annie-spratt-427340-unsplash-donation.png") 0% 0% no-repeat
+    padding-box;
+  background-size: cover;
+  opacity: 1;
+  height: 125vh;
+}
+
+.payment-and-information-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 6%;
+}
+
+.form-information {
+  background-color: #354463;
+  width: 41%;
+}
+
+.text-banner {
+  width: 30%;
+}
+
+.form-information form {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5rem;
+}
+
+.form-information form div {
+  margin: 1rem 0rem 0 0;
+}
+
+.form-information form h4 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.form-information form label {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.056rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.form-information form input {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+  text-align: left;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  margin: 1rem 0;
+  outline: none;
+}
+
+.form-information form div > div {
+  margin: 0.2rem 0;
+  border-bottom: 2px solid #c1f7d5;
+}
+
+.form-information form .name {
+  display: grid;
+  grid-template-columns: repeat(2, 37%);
+  gap: 5rem;
+}
+
+.form-information form .street,
+form .email-address,
+form .card,
+form .donation-message {
+  display: grid;
+  grid-template-columns: 83%;
+}
+
+.form-information form .city-state-zip {
+  display: grid;
+  grid-template-columns: 36% repeat(2, 15%);
+  gap: 5rem;
+}
+
+.form-information #state {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  background-color: transparent;
+  width: 9rem;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.form-information #state option {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  background-color: #354463;
+  color: #fff;
+  width: 10rem;
+}
+
+.form-information form .card-expiry {
+  display: grid;
+  grid-template-columns: repeat(2, 10rem) 13rem;
+  gap: 6rem;
+}
+
+.payment-heading h4 {
+  margin-top: 3rem;
+}
+
+.donation-message h2 {
+  margin-top: 3rem;
+}
+
+.form-information form .payment-links {
+  display: grid;
+  grid-template-columns: 30% 42%;
+  gap: 6rem;
+  margin-bottom: 0;
+}
+
+.form-information form .donation-message h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.form-information form a.back-btn {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.016rem;
+  text-align: left;
+  text-decoration: underline;
+  color: #c1f7d5;
+}
+
+.form-information form a.payment-proceed-btn {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #c1f7d5;
+  color: #354463;
+  border-radius: 10rem;
+  padding: 1rem;
+}
+
+.form-information form a.back-btn:hover {
+  color: tomato;
+}
+
+.form-information form a.payment-proceed-btn:hover {
+  background-color: rgb(113, 231, 45);
+}
+
+.text-banner h1 {
+  text-align: left;
+  line-height: 1.1;
+  font-size: 7.2rem;
+  font-family: Flood Std;
+  color: #ffffff;
+  opacity: 1;
+} */
