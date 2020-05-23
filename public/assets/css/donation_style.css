@@ -51,6 +51,11 @@ a {
     opacity: 1;
 }
 
+.title-header a:hover {
+    transform: skewX(-10deg);
+    border-bottom: 3px solid teal;
+}
+
 /* Donation header style end */
 
 /* Donation main style start */
@@ -191,6 +196,16 @@ hr {
     padding: 1rem;
 }
 
+.donation-form a.payment-proceed-btn:hover {
+    background-color: rgb(8, 95, 44);
+    color: #fff;
+}
+
+.donation-form a.back-btn:hover {
+    /* background-color: rgb(8, 95, 44); */
+    color: #fff;
+}
+
 .text-banner {
     margin-top: 20%;
 }
@@ -218,7 +233,7 @@ hr {
         background-color: #354463;
         background-size: cover;
         opacity: 1;
-        height: 135vh;
+        height: 160vh;
     }
 
     .payment-and-information-section {
@@ -229,7 +244,7 @@ hr {
     }
 
     .donation-form {
-        margin-top: 10%;
+        /* margin-top: 10%; */
         display: flex;
         flex-direction: column;
         padding: 1.5% 4%;
@@ -264,7 +279,8 @@ hr {
     }
 
     .text-banner {
-        margin-top: 15%;
+        width: 80vw;
+        margin-top: 5rem;
     }
 
     .text-banner h1 {
@@ -279,7 +295,7 @@ hr {
 
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
 
     /* Donation main style start */
     #payment {
@@ -298,7 +314,7 @@ hr {
     }
 
     .donation-form {
-        margin-top: 10%;
+        margin-top: 10rem;
         display: flex;
         flex-direction: column;
         padding: 1.5% 4%;
@@ -337,7 +353,8 @@ hr {
     }
 
     .text-banner {
-        margin-top: 15%;
+        width: 80vw;
+        margin-top: 5rem;
     }
 
     .text-banner h1 {
@@ -419,4 +436,141 @@ hr {
     }
 
 
+}
+
+@media screen and (max-width: 500px) {
+
+    #payment {
+
+        height: 170vh;
+    }
+
+    .payment-and-information-section {
+        display: flex;
+        flex-flow: column-reverse;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .donation-form {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5% 4%;
+        background-color: #354463;
+    }
+
+
+    .donation-form .payment-links {
+        display: flex;
+        flex-flow: column-reverse;
+
+        padding-bottom: 5rem;
+        /* justify-content: space-between; */
+
+    }
+
+    .donation-form a.back-btn {
+        font-size: 1.8rem;
+        font-weight: 300;
+        letter-spacing: -0.016rem;
+        text-align: left;
+        text-decoration: underline;
+        color: #c1f7d5;
+    }
+
+    .donation-form a.payment-proceed-btn {
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: #c1f7d5;
+        color: #354463;
+        width: 100%;
+        border-radius: 10rem;
+        padding: 1.2rem 0.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-banner {
+        width: 60vw;
+        margin-top: 5rem;
+    }
+
+    .text-banner h1 {
+        font-size: 3.4rem;
+        font-family: Flood Std;
+        font-weight: Regular;
+        color: #fff;
+        text-align: left;
+        opacity: 1;
+    }
+
+    .donation-message p {
+        padding: 5rem 0;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .donation-form input {
+        size: 60rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: -0.04rem;
+        text-align: left;
+        color: #ffffff;
+        border: none;
+        background-color: transparent;
+        padding: 0.5rem 0;
+        outline: none;
+    }
+
+
+    .donation-form label {
+        display: block;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.056rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: left;
+        margin: 2rem 0 -1.5rem 0;
+    }
+
+    .donation-form h4 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #fff;
+        padding: 3rem 0 0 0;
+    }
+
+    .donation-form .city-state-zip {
+        display: grid;
+        grid-template-columns: 35% 25% 25%;
+        column-gap: 5%;
+    }
+
+
+    .donation-form .card-details {
+        display: grid;
+        grid-template-columns: 25% 25% 40%;
+        gap: 5%;
+    }
+
+    .donation-form #state {
+        margin-top: 1rem;
+        font-size: 1rem;
+        background-color: transparent;
+        width: 5rem;
+        border: none;
+        outline: none;
+        color: #fff;
+    }
+
+    .donation-form #state option {
+        margin-top: 2rem;
+        font-size: 0.5rem;
+        background-color: #354463;
+        color: #fff;
+    }
 }
