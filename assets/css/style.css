@@ -311,6 +311,11 @@ a {
     padding: 1rem;
 }
 
+a.btn-read-more:hover {
+    background-color: rgb(8, 95, 44);
+    color: #fff;
+}
+
 .mission-cards .card img {
     width: 100%;
     background-size: cover;
