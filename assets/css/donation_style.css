@@ -1,0 +1,422 @@
+/* @import url(//db.onlinewebfonts.com/c/bfbdc6a04609bff0d5ccdfcf6b766d95?family=Flood + Std); */
+@font-face {
+    font-family: Flood Std;
+    src: url("../fonts/flood-std/FloodStd.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #354463;
+    text-decoration: none;
+    display: block;
+}
+
+/*##########################################
+        Donation Page Styling
+##########################################*/
+
+/* Donation header style start */
+#header {
+    background-color: #fff;
+}
+
+.title-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 20rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #354463;
+    opacity: 1;
+}
+
+/* Donation header style end */
+
+/* Donation main style start */
+#payment {
+    background: transparent url("../images/annie-spratt-427340-unsplash-donation.png") 0% 0% no-repeat padding-box;
+    background-color: #354463;
+    background-size: cover;
+    opacity: 1;
+    height: 125vh;
+}
+
+.payment-and-information-section {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10%;
+}
+
+.donation-form {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5% 4%;
+    background-color: #354463;
+}
+
+.donation-form input {
+    size: 60rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: -0.04rem;
+    text-align: left;
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem 0;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #c1f7d5;
+}
+
+.donation-form label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.056rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 2rem 0 -1.5rem 0;
+}
+
+.donation-form h4 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 3rem 0 0 0;
+}
+
+
+.donation-form .name {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    column-gap: 10%;
+}
+
+.donation-form .city-state-zip {
+    display: grid;
+    grid-template-columns: 45% repeat(2, 17%);
+    column-gap: 10%;
+}
+
+.donation-form .street,
+.donation-form .email-address,
+.donation-form .card {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.donation-form .card-details {
+    display: grid;
+    grid-template-columns: repeat(2, 15%) 22%;
+    gap: 5%;
+}
+
+.donation-form #state {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    background-color: transparent;
+    width: 9rem;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.donation-form #state option {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    background-color: #354463;
+    color: #fff;
+}
+
+.donation-message p {
+    padding: 5rem 0;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.donation-form .payment-links {
+    display: grid;
+    grid-template-columns: 30% 42%;
+    gap: 6rem;
+    padding-bottom: 5rem;
+    justify-content: space-between;
+}
+
+.donation-form a.back-btn {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -0.016rem;
+    text-align: left;
+    text-decoration: underline;
+    color: #c1f7d5;
+}
+
+.donation-form a.payment-proceed-btn {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #c1f7d5;
+    color: #354463;
+    border-radius: 10rem;
+    padding: 1rem;
+}
+
+.text-banner {
+    margin-top: 20%;
+}
+
+.text-banner h1 {
+    font-size: 7rem;
+    font-family: Flood Std;
+    font-weight: Regular;
+    color: #fff;
+    text-align: left;
+    opacity: 1;
+}
+
+
+/*##########################################
+        Donation Page Styling
+##########################################*/
+
+@media screen and (max-width: 1200px) {
+
+
+    /* Donation main style start */
+    #payment {
+        background: transparent url("../images/annie-spratt-427340-unsplash-donation.png") 0% 0% no-repeat padding-box;
+        background-color: #354463;
+        background-size: cover;
+        opacity: 1;
+        height: 135vh;
+    }
+
+    .payment-and-information-section {
+        display: flex;
+        flex-flow: column-reverse;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .donation-form {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5% 4%;
+        background-color: #354463;
+    }
+
+
+    .donation-form .payment-links {
+        display: flex;
+        padding-bottom: 5rem;
+        justify-content: space-between;
+    }
+
+    .donation-form a.back-btn {
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: -0.016rem;
+        text-align: left;
+        text-decoration: underline;
+        color: #c1f7d5;
+    }
+
+    .donation-form a.payment-proceed-btn {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: #c1f7d5;
+        color: #354463;
+        width: 28vw;
+        border-radius: 10rem;
+        padding: 1rem 0.3rem;
+    }
+
+    .text-banner {
+        margin-top: 15%;
+    }
+
+    .text-banner h1 {
+        font-size: 4.6rem;
+        font-family: Flood Std;
+        font-weight: Regular;
+        color: #fff;
+        text-align: left;
+        opacity: 1;
+    }
+
+
+}
+
+@media screen and (max-width: 680px) {
+
+    /* Donation main style start */
+    #payment {
+        background: transparent url("../images/annie-spratt-427340-unsplash-donation.png") 0% 0% no-repeat padding-box;
+        background-color: #354463;
+        background-size: cover;
+        opacity: 1;
+        /* height: 135vh; */
+    }
+
+    .payment-and-information-section {
+        display: flex;
+        flex-flow: column-reverse;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .donation-form {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5% 4%;
+        background-color: #354463;
+    }
+
+
+    .donation-form .payment-links {
+        display: flex;
+        flex-flow: column-reverse;
+
+        padding-bottom: 5rem;
+        /* justify-content: space-between; */
+
+    }
+
+    .donation-form a.back-btn {
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: -0.016rem;
+        text-align: left;
+        text-decoration: underline;
+        color: #c1f7d5;
+    }
+
+    .donation-form a.payment-proceed-btn {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: #c1f7d5;
+        color: #354463;
+        width: 100%;
+        border-radius: 10rem;
+        padding: 1.5rem 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-banner {
+        margin-top: 15%;
+    }
+
+    .text-banner h1 {
+        font-size: 3.4rem;
+        font-family: Flood Std;
+        font-weight: Regular;
+        color: #fff;
+        text-align: left;
+        opacity: 1;
+    }
+
+    .donation-message p {
+        padding: 5rem 0;
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .donation-form input {
+        size: 60rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: -0.04rem;
+        text-align: left;
+        color: #ffffff;
+        border: none;
+        background-color: transparent;
+        padding: 0.5rem 0;
+        outline: none;
+    }
+
+
+    .donation-form label {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 0.056rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: left;
+        margin: 2rem 0 -1.5rem 0;
+    }
+
+    .donation-form h4 {
+        font-size: 2.6rem;
+        font-weight: bold;
+        color: #fff;
+        padding: 3rem 0 0 0;
+    }
+
+    .donation-form .city-state-zip {
+        display: grid;
+        grid-template-columns: 35% 25% 25%;
+        column-gap: 5%;
+    }
+
+
+    .donation-form .card-details {
+        display: grid;
+        grid-template-columns: 25% 25% 40%;
+        gap: 5%;
+    }
+
+    .donation-form #state {
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        background-color: transparent;
+        width: 5rem;
+        border: none;
+        outline: none;
+        color: #fff;
+    }
+
+    .donation-form #state option {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        background-color: #354463;
+        color: #fff;
+    }
+
+
+}
