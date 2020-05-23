@@ -202,7 +202,7 @@ hr {
 }
 
 .donation-form a.back-btn:hover {
-    color: rgb(212, 4, 4);
+    color: rgb(214, 43, 43);
 }
 
 .text-banner {
@@ -570,5 +570,12 @@ hr {
         font-size: 0.5rem;
         background-color: #354463;
         color: #fff;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #payment {
+
+        height: 195vh;
     }
 }

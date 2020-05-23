@@ -1550,3 +1550,10 @@ a.btn-read-more:hover {
         color: #354463;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .the-issue-section {
+        min-height: 135vh;
+        background-color: #354463;
+    }
+}
