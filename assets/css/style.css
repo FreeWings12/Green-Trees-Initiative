@@ -352,7 +352,6 @@ a {
 }
 
 .footer-header a:hover {
-
     transform: skewX(-10deg);
     border-bottom: 2px solid teal;
 }
